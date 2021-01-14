@@ -8,7 +8,7 @@
       <head>
          <meta charset="utf-8">
         <title>Deru Ombak Nusantara</title>
-<!-- <link rel="icon" href="assets/img/bintang/logo.ico"> -->
+        <link rel="icon" type="image/jpg" href="assets/img/Deruombaknusantara.jpg"/>
          <!--=================================
             Meta tags
             =================================-->
@@ -23,7 +23,6 @@
          <link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
          <!--Plugins CSS Files-->
          <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
          <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
          <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.css">
          <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
@@ -81,7 +80,16 @@
             .carousel-control.right {
             background-image: none;
             }
+
+            .carousel-bg-purple-content p:hover {
+               color: #F8ACFF;
+            }
+
+            .carousel-bg-yellow-content p:hover {
+               color: #067370;
+            }
          </style>
+         <script src="assets/js/jquery-1.11.0.min.js"></script> 
          <script type="text/javascript">
             $(window).bind("load resize slid.bs.carousel", function() {
             var imageHeight = $(".active .holder").height();
@@ -99,9 +107,6 @@
             <link rel="stylesheet" type="text/css" href="assets/css/colors/color7.css">
             -->
          <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-         <script src="assets/js/jquery-1.11.0.min.js"></script> 
          <script src="assets/js/jpreloader.min.js"></script>
          <script src="assets/js/jquery.mousewheel.min.js"></script> 
          <script src="assets/js/bootstrap.min.js"></script> 
@@ -153,57 +158,88 @@
                   <!--Do not edit this section Unless you have to modify HTML structure of Playlist-->
                </div>
                <div >
-                     <div class="rock_player " style="padding-top: 10px;padding-left: 120px;padding-right:50px;height: 40px;">
-                        <div class="sticky_player" data-sticky="true" style="border-radius: 35px;height: 40px;">
-                           <!--//=============================================================
-                              Edit or Modify Playist content in the following Hypertext
-                              ==============================================================-->
-                           <div class="jp-playlist hidden">
-                              <!--Add Songs In mp3 formate here-->
-                              <ul class=" playlist-files">
-                                 <li 
-                                    data-thumb="assets/img/media/media_01.jpg"
-                                    data-title="The Panturas - Queen Of The Sun"
-                                    data-genre="surf rock"  
-                                    data-artist="Poision Studios" 
-                                    data-length="4:13" 
-                                    data-itunes="http://xvelopers.com" 
-                                    data-video="http://xvelopers.com" 
-                                    data-mp3="assets/jPlayer/The Panturas - Queen of The South (Official Lyric Video).mp3"></li>
-                              </ul>
-                              <!--Playlist ends--> 
-                           </div>
-                           <div class="container player_wrapper" style="margin-left: 30px; margin-right: 30px;width: 100%;height:40px">
-                              <div class="row" style="height: 40px;">
-                                 <div id="player-instance" class="jp-jplayer" style="background-color: #F26542;
-                                    width: 0px;
-                                    height: 0px;"></div>
-                                 <div class="rock_controls controls" style="height: 40px !important;
-                                    padding-top: 5px !important;
-                                    margin-top: 0px;" >
-                                     <div  class="fa fa-play jp-play" style="    display: block;
-                                       height: 40px !important;
-                                       padding-top: 15px;
-                                       line-height: 0;">&nbsp Play</div>
-                                    <div  class="fa fa-pause jp-pause" style="    display: block;
-                                       height: 40px !important;
-                                       padding-top: 15px;
-                                       line-height: 0;
-                                       font-family: ProximaSemiBold;">&nbsp Pause</div>
-                                 </div>
-                                 <div class="jp-title audio-title" style="    width: 85%;
-                                    padding-left: 40px;
-                                    background-color: #F26542;
-                                    position: absolute;
-                                    height: 40px;
-                                    padding-top: 5px;" >The Panturas - Queen Of The Sun</div>
-                                 <div class="audio-timer" style="font-size: 18px;padding-left:1310px;"> <span class="jp-current-time">01:02</span> </div>
+                  <div class="rock_player " style="padding-left: 120px;padding-right:50px;height: 40px;">
+                     <div class="sticky_player" data-sticky="true" style="border-radius: 35px;height: 40px;">
+                        <!--//=============================================================
+                           Edit or Modify Playist content in the following Hypertext
+                           ==============================================================-->
+                        <div class="jp-playlist hidden">
+                           <!--Add Songs In mp3 formate here-->
+                           <ul class=" playlist-files">
+                              <li 
+                                 data-thumb="assets/img/media/media_01.jpg"
+                                 data-title="The Panturas - Queen Of The South"
+                                 data-genre="surf rock"  
+                                 data-artist="The Panturas" 
+                                 data-mp3="assets/jPlayer/The Panturas - Queen of The South (Official Lyric Video).mp3">
+                              </li>
+                              <li 
+                                 data-thumb="assets/img/media/media_01.jpg"
+                                 data-title="The Mentawais - Surfin' Java"
+                                 data-genre="surf rock"  
+                                 data-artist="The Mentawais" 
+                                 data-mp3="assets/jPlayer/The Mentawais - Surfin Java.mp3">
+                              </li>
+                              <li 
+                                 data-thumb="assets/img/media/media_01.jpg"
+                                 data-title="The Southern Beach Terror - Wild Sea Horses"
+                                 data-genre="surf rock"  
+                                 data-artist="The Southern Beach Terror" 
+                                 data-mp3="assets/jPlayer/The Southern Beach Terror - Wild Sea Horses.mp3">
+                              </li>
+                              <li 
+                                 data-thumb="assets/img/media/media_01.jpg"
+                                 data-title="Muchos Libre - U-La-La"
+                                 data-genre="surf rock"  
+                                 data-artist="Muchos Libre" 
+                                 data-mp3="assets/jPlayer/Muchos Libre - U-La-La (Lyric Video).mp3">
+                              </li>
+                              <li 
+                                 data-thumb="assets/img/media/media_01.jpg"
+                                 data-title="Bitmizka - 3-4!"
+                                 data-genre="surf rock"  
+                                 data-artist="Bitmizka" 
+                                 data-mp3="assets/jPlayer/3-4!.mp3">
+                              </li>
+                              <li 
+                                 data-thumb="assets/img/media/media_01.jpg"
+                                 data-title="The Sailors - Bandeng Presto"
+                                 data-genre="surf rock"  
+                                 data-artist="The Sailors" 
+                                 data-mp3="assets/jPlayer/The Sailors - Bandeng Presto.mp3">
+                              </li>
+                           </ul>
+                           <!--Playlist ends--> 
+                        </div>
+                        <div class="container player_wrapper" style="margin-left: 15px; margin-right: 30px;width: 100%;height:40px">
+                           <div class="row" style="height: 40px;">
+                              <div id="player-instance" class="jp-jplayer" style="background-color: #F26542;
+                                 width: 0px;
+                                 height: 0px;"></div>
+                              <div class="rock_controls controls" style="height: 40px !important;
+                                 padding-top: 5px !important;
+                                 margin-top: 0px; margin-right: 5px;" >
+                                  <div  class="jp-play" style="    display: block;
+                                    height: 40px !important;
+                                    padding-top: 5px;
+                                    line-height: 0;"><span style="font-family: ProximaSemiBold;"><i class="fa fa-play"></i> Play</span></div>
+                                 <div  class="jp-pause" style="    display: block;
+                                    height: 40px !important;
+                                    padding-top: 5px;
+                                    line-height: 0;"><span style="font-family: ProximaSemiBold;"><i class="fa fa-pause"></i> Pause</span></div>
                               </div>
+                              <div class="jp-title audio-title" style="width: 80%;
+                                 padding-left: 30px;
+                                 background-color: #F26542;
+                                 position: absolute;
+                                 height: 40px;
+                                 padding-top: 5px;" >The Panturas - Queen Of The Sun</div>
+                              <div class="" style="position: absolute; font-size: 18px;font-family: ProximaReg; right: 6rem; top: 0.75rem;"> <span class="jp-current-time">01:02</span> </div>
                            </div>
                         </div>
                      </div>
-                     <!--   </section> -->
                   </div>
+               </div>
                <!--   <section id="section_11" class="banner"> -->
             </nav>
          </header>
@@ -220,16 +256,16 @@
                      </ol>
                      <!-- Wrapper for slides -->
                      <div class="carousel-inner" role="listbox">
-                        <div class="item active">
+                        <div class="item">
                            <img src="assets/img/banner/a-01.png"   alt="...">
                            <div class="carousel-caption">
                               <a href="history.html" class="btn btn_fb" style="border-radius: 25px;font-size: 15px;background-color: black;">Click Here</a>
                            </div>
                         </div>
-                        <div class="item ">
+                        <div class="item active">
                            <img src="assets/img/banner/a-02.png"  alt="...">
                            <div class="carousel-caption">
-                              <a href="history.html" class="btn btn_fb" style="border-radius: 25px;font-size: 15px;background-color: black;">Click Here</a>
+                              <a id="scroll_to_content" class="btn btn_fb" style="border-radius: 25px;font-size: 15px;background-color: black;">Click Here</a>
                            </div>
                         </div>
                         <div class="item ">
@@ -267,10 +303,10 @@
             <!--=============
                Music Tracks
                ===============-->
-            <section id="" class="" style="padding-top: 0px; background-color: #18242C" >
+            <section id="section-content" class="" style="padding-top: 0px; background-color: #18242C" >
             </section>
 
-            <section id="" class="" style="padding-top: 0px;padding-bottom:0px;background-color: #955591" >
+            <section class="" style="padding-top: 0px;padding-bottom:0px;background-color: #955591" >
 
             <div class="container">
                <div class="row" style="padding-top: 60px;">
@@ -290,78 +326,84 @@
             </div>
               
                
-            <div id="carousel-example-generic" class="carousel slide container" data-ride="carousel" style="padding-bottom: 50px;">
+            <div id="carousel-content" class="carousel slide container carousel-bg-purple-content" data-ride="carousel" style="padding-bottom: 50px;">
                <!-- Wrapper for slides -->
                <div class="carousel-inner">
                   <div class="item active">
                      <div class="holder col-sm-8">
                         <img class="img-responsive" src="assets/img/history1/1-01.png" alt="...">
+                        <span style="margin-top: 10px; color: white;">FOTO - FOTO MUSISI SURF ROCK</span>
                      </div>
                      <div class="col-sm-4">
                         <div class="carousel-caption2" style="font-size: 18px;color: white;line-height: 1.6;font-family: ProximaReg">
                        <p>Surf rock merupakan sebuah sub-genre dari musik rock yang identik dengan budaya selancar dan suasana pantai. Genre ini muncul di sebuah pantai di California Selatan dan Genre ini populer antara tahun 1962&ndash;1964.</p>
 <p>Genre ini terbagi dalam dua jenis, yaitu instrumental surf dan vocal surf. Instrumental surf sendiri sangat identik dengan gitar elektrik dan juga reverb yang sangat &ldquo;kental&rdquo; yang dimainkan untuk menstimulasi atau membangkitkan suara ala ombak di pantai.</p>
-<p>Instrumental surf dipopulerkan oleh Dick Dale &amp;amp; The Del-Tones. Tidak berbeda jauh dengan instrumental surf, vocal surf cenderung megadopsi irama berselancar dengan harmonisasi vokal dan diiring irama rock &amp;amp; roll ala Chuck Berry, The Beach Boys merupakan band yang mempopulerkan vocal surf.</p>
+<p>Instrumental surf dipopulerkan oleh Dick Dale &amp; The Del-Tones. Tidak berbeda jauh dengan instrumental surf, vocal surf cenderung megadopsi irama berselancar dengan harmonisasi vokal dan diiring irama rock &amp; roll ala Chuck Berry, The Beach Boys merupakan band yang mempopulerkan vocal surf.</p>
                         </div>
                      </div>
                   </div>
                   <div class="item">
                      <div class="holder col-sm-8">
                         <img class="img-responsive" src="assets/img/history1/1-02.png" alt="...">
+                        <span style="margin-top: 10px; color: white;">FOTO - FOTO MUSISI SURF ROCK</span>
                      </div>
                      <div class="col-sm-4">
                          <div class="carousel-caption2" style="font-size: 15px;color: white;line-height: 1.6;font-family: ProximaReg">
                        <p>Surf rock merupakan sebuah sub-genre dari musik rock yang identik dengan budaya selancar dan suasana pantai. Genre ini muncul di sebuah pantai di California Selatan dan Genre ini populer antara tahun 1962&ndash;1964.</p>
 <p>Genre ini terbagi dalam dua jenis, yaitu instrumental surf dan vocal surf. Instrumental surf sendiri sangat identik dengan gitar elektrik dan juga reverb yang sangat &ldquo;kental&rdquo; yang dimainkan untuk menstimulasi atau membangkitkan suara ala ombak di pantai.</p>
-<p>Instrumental surf dipopulerkan oleh Dick Dale &amp;amp; The Del-Tones. Tidak berbeda jauh dengan instrumental surf, vocal surf cenderung megadopsi irama berselancar dengan harmonisasi vokal dan diiring irama rock &amp;amp; roll ala Chuck Berry, The Beach Boys merupakan band yang mempopulerkan vocal surf.</p>
+<p>Instrumental surf dipopulerkan oleh Dick Dale &amp; The Del-Tones. Tidak berbeda jauh dengan instrumental surf, vocal surf cenderung megadopsi irama berselancar dengan harmonisasi vokal dan diiring irama rock &amp; roll ala Chuck Berry, The Beach Boys merupakan band yang mempopulerkan vocal surf.</p>
                         </div>
                      </div>
                   </div>
                    <div class="item">
                      <div class="holder col-sm-8">
                         <img class="img-responsive" src="assets/img/history1/1-03.png" alt="...">
+                        <span style="margin-top: 10px; color: white;">FOTO - FOTO MUSISI SURF ROCK</span>
                      </div>
                      <div class="col-sm-4">
                          <div class="carousel-caption2" style="font-size: 15px;color: white;line-height: 1.6;font-family: ProximaReg">
                        <p>Surf rock merupakan sebuah sub-genre dari musik rock yang identik dengan budaya selancar dan suasana pantai. Genre ini muncul di sebuah pantai di California Selatan dan Genre ini populer antara tahun 1962&ndash;1964.</p>
 <p>Genre ini terbagi dalam dua jenis, yaitu instrumental surf dan vocal surf. Instrumental surf sendiri sangat identik dengan gitar elektrik dan juga reverb yang sangat &ldquo;kental&rdquo; yang dimainkan untuk menstimulasi atau membangkitkan suara ala ombak di pantai.</p>
-<p>Instrumental surf dipopulerkan oleh Dick Dale &amp;amp; The Del-Tones. Tidak berbeda jauh dengan instrumental surf, vocal surf cenderung megadopsi irama berselancar dengan harmonisasi vokal dan diiring irama rock &amp;amp; roll ala Chuck Berry, The Beach Boys merupakan band yang mempopulerkan vocal surf.</p>
+<p>Instrumental surf dipopulerkan oleh Dick Dale &amp; The Del-Tones. Tidak berbeda jauh dengan instrumental surf, vocal surf cenderung megadopsi irama berselancar dengan harmonisasi vokal dan diiring irama rock &amp; roll ala Chuck Berry, The Beach Boys merupakan band yang mempopulerkan vocal surf.</p>
                         </div>
                      </div>
                   </div>
                    <div class="item">
                      <div class="holder col-sm-8">
                         <img class="img-responsive" src="assets/img/history1/1-04.png" alt="...">
+                        <span style="margin-top: 10px; color: white;">FOTO - FOTO MUSISI SURF ROCK</span>
                      </div>
                      <div class="col-sm-4">
                          <div class="carousel-caption2" style="font-size: 15px;color: white;line-height: 1.6;font-family: ProximaReg">
                        <p>Surf rock merupakan sebuah sub-genre dari musik rock yang identik dengan budaya selancar dan suasana pantai. Genre ini muncul di sebuah pantai di California Selatan dan Genre ini populer antara tahun 1962&ndash;1964.</p>
 <p>Genre ini terbagi dalam dua jenis, yaitu instrumental surf dan vocal surf. Instrumental surf sendiri sangat identik dengan gitar elektrik dan juga reverb yang sangat &ldquo;kental&rdquo; yang dimainkan untuk menstimulasi atau membangkitkan suara ala ombak di pantai.</p>
-<p>Instrumental surf dipopulerkan oleh Dick Dale &amp;amp; The Del-Tones. Tidak berbeda jauh dengan instrumental surf, vocal surf cenderung megadopsi irama berselancar dengan harmonisasi vokal dan diiring irama rock &amp;amp; roll ala Chuck Berry, The Beach Boys merupakan band yang mempopulerkan vocal surf.</p>
+<p>Instrumental surf dipopulerkan oleh Dick Dale &amp; The Del-Tones. Tidak berbeda jauh dengan instrumental surf, vocal surf cenderung megadopsi irama berselancar dengan harmonisasi vokal dan diiring irama rock &amp; roll ala Chuck Berry, The Beach Boys merupakan band yang mempopulerkan vocal surf.</p>
                         </div>
                      </div>
                   </div>
                    <div class="item">
                      <div class="holder col-sm-8">
                         <img class="img-responsive" src="assets/img/history1/1-05.png" alt="...">
+                        <span style="margin-top: 10px; color: white;">FOTO - FOTO MUSISI SURF ROCK</span>
                      </div>
                      <div class="col-sm-4">
                          <div class="carousel-caption2" style="font-size: 15px;color: white;line-height: 1.6;font-family: ProximaReg">
                        <p>Surf rock merupakan sebuah sub-genre dari musik rock yang identik dengan budaya selancar dan suasana pantai. Genre ini muncul di sebuah pantai di California Selatan dan Genre ini populer antara tahun 1962&ndash;1964.</p>
 <p>Genre ini terbagi dalam dua jenis, yaitu instrumental surf dan vocal surf. Instrumental surf sendiri sangat identik dengan gitar elektrik dan juga reverb yang sangat &ldquo;kental&rdquo; yang dimainkan untuk menstimulasi atau membangkitkan suara ala ombak di pantai.</p>
-<p>Instrumental surf dipopulerkan oleh Dick Dale &amp;amp; The Del-Tones. Tidak berbeda jauh dengan instrumental surf, vocal surf cenderung megadopsi irama berselancar dengan harmonisasi vokal dan diiring irama rock &amp;amp; roll ala Chuck Berry, The Beach Boys merupakan band yang mempopulerkan vocal surf.</p>
+<p>Instrumental surf dipopulerkan oleh Dick Dale &amp; The Del-Tones. Tidak berbeda jauh dengan instrumental surf, vocal surf cenderung megadopsi irama berselancar dengan harmonisasi vokal dan diiring irama rock &amp; roll ala Chuck Berry, The Beach Boys merupakan band yang mempopulerkan vocal surf.</p>
                         </div>
                      </div>
                   </div>
                    <div class="item">
                      <div class="holder col-sm-8">
                         <img class="img-responsive" src="assets/img/history1/1-06.png" alt="...">
+                        <span style="margin-top: 10px; color: white;">FOTO - FOTO MUSISI SURF ROCK</span>
                      </div>
                      <div class="col-sm-4">
                          <div class="carousel-caption2" style="font-size: 15px;color: white;line-height: 1.6;font-family: ProximaReg">
                        <p>Surf rock merupakan sebuah sub-genre dari musik rock yang identik dengan budaya selancar dan suasana pantai. Genre ini muncul di sebuah pantai di California Selatan dan Genre ini populer antara tahun 1962&ndash;1964.</p>
 <p>Genre ini terbagi dalam dua jenis, yaitu instrumental surf dan vocal surf. Instrumental surf sendiri sangat identik dengan gitar elektrik dan juga reverb yang sangat &ldquo;kental&rdquo; yang dimainkan untuk menstimulasi atau membangkitkan suara ala ombak di pantai.</p>
-<p>Instrumental surf dipopulerkan oleh Dick Dale &amp;amp; The Del-Tones. Tidak berbeda jauh dengan instrumental surf, vocal surf cenderung megadopsi irama berselancar dengan harmonisasi vokal dan diiring irama rock &amp;amp; roll ala Chuck Berry, The Beach Boys merupakan band yang mempopulerkan vocal surf.</p>
+<p>Instrumental surf dipopulerkan oleh Dick Dale &amp; The Del-Tones. Tidak berbeda jauh dengan instrumental surf, vocal surf cenderung megadopsi irama berselancar dengan harmonisasi vokal dan diiring irama rock &amp; roll ala Chuck Berry, The Beach Boys merupakan band yang mempopulerkan vocal surf.</p>
                         </div>
                      </div>
                   </div>
@@ -370,7 +412,7 @@
                
                <div class="clearfix"></div>
                <div style="background-color:#F8B62E;padding-top: 50px;padding-bottom: 50px;">
-               <div class="container" style="background-color:#F8B62E " >
+               <div class="container carousel-bg-yellow-content" style="background-color:#F8B62E " >
   <div class="row" style="color: white;font-size: 18px;line-height: 1.6;font-family: ProximaReg">
     <div class="col-md-4">
       <p>kembangkan dengan menambahkan suara-suara ala timur tengah dan meksiko dengan menggunakan
@@ -401,7 +443,7 @@ rod rock.</p>
                         <h2 class="animated fadeInLeft" style="font-size: 36px;padding-left: 10px;font-family: EdInterlock">PERJALANAN MUSIK<br/>SURF ROCK DI INDONESIA</h2>
                      </div>
 
-            <div id="carousel-example-generic" class="carousel slide container" data-ride="carousel" style="padding-bottom: 50px; text-align: left;">
+            <div id="carousel-content" class="carousel slide container carousel-bg-purple-content" data-ride="carousel" style="padding-bottom: 50px; text-align: left;">
                <!-- Wrapper for slides -->
                <div class="carousel-inner" >
                   <div class="item active">
@@ -420,6 +462,7 @@ soundnya Dripping Wet Reverb khas Surf Rock.
                      </div>
                      <div class="holder col-sm-8">
                         <img class="img-responsive" src="assets/img/history1/1-01.png" alt="...">
+                        <span style="margin-top: 10px; color: white;">FOTO - FOTO MUSISI SURF ROCK</span>
                      </div>
                    
                   </div>
@@ -440,6 +483,7 @@ soundnya Dripping Wet Reverb khas Surf Rock.
                      </div>
                      <div class="holder col-sm-8">
                         <img class="img-responsive" src="assets/img/history1/1-02.png" alt="...">
+                        <span style="margin-top: 10px; color: white;">FOTO - FOTO MUSISI SURF ROCK</span>
                      </div>
                   </div>
                    <div class="item">
@@ -459,6 +503,7 @@ soundnya Dripping Wet Reverb khas Surf Rock.
                      </div>
                       <div class="holder col-sm-8">
                         <img class="img-responsive" src="assets/img/history1/1-03.png" alt="...">
+                        <span style="margin-top: 10px; color: white;">FOTO - FOTO MUSISI SURF ROCK</span>
                      </div>
                   </div>
                    <div class="item">
@@ -478,6 +523,7 @@ soundnya Dripping Wet Reverb khas Surf Rock.
                      </div>
                       <div class="holder col-sm-8">
                         <img class="img-responsive" src="assets/img/history1/1-04.png" alt="...">
+                        <span style="margin-top: 10px; color: white;">FOTO - FOTO MUSISI SURF ROCK</span>
                      </div>
                   </div>
                    <div class="item">
@@ -497,6 +543,7 @@ soundnya Dripping Wet Reverb khas Surf Rock.
                      </div>
                       <div class="holder col-sm-8">
                         <img class="img-responsive" src="assets/img/history1/1-05.png" alt="...">
+                        <span style="margin-top: 10px; color: white;">FOTO - FOTO MUSISI SURF ROCK</span>
                      </div>
                   </div>
                    <div class="item">
@@ -516,13 +563,14 @@ soundnya Dripping Wet Reverb khas Surf Rock.
                      </div>
                       <div class="holder col-sm-8">
                         <img class="img-responsive" src="assets/img/history1/1-06.png" alt="...">
+                        <span style="margin-top: 10px; color: white;">FOTO - FOTO MUSISI SURF ROCK</span>
                      </div>
                   </div>
                </div>
             </div>
 
               <div style="background-color:#F8B62E;padding-top: 50px;padding-bottom: 50px">
-               <div class="container" style="background-color:#F8B62E " >
+               <div class="container carousel-bg-yellow-content" style="background-color:#F8B62E " >
   <div class="row">
     <div class="col-md-4" style="">
      <img src="assets/img/history2/1-04.png">
@@ -558,40 +606,44 @@ diantaranya seperti The Mentawais, The Sailors, The Maguras, dan The Panturas.</
                <!--======================================
                   Footer
                   ==========================================-->
-               <footer id="section_13" class="parallax parallax_five footer" data-stellar-background-ratio="0.5" style="background-position: 50% 3.5px;">
-            <div style="padding-left: 50px; padding-right: 50px;background-color: #0f1b24">
-               <!--=========================
-                  Contact Form
-                  ===========================-->          
-               </br></br>
-               <div class="row" style="padding-top: 10px;text-align: left;">
-                  <div class="col-xs-12 col-md-6" style="text-align: left">
-                     <img src="assets/img/logobottom.png" width="300px" alt="">
-                     <p style="font-size: 20px;font-family: ProximaReg;"><strong>Deru Ombak Nusantara</strong> adalah media yang mewadahi segala sesuatu bentuk informasi mengenai musik Surf Rock khususnya di Indonesia dan juga bentuk upaya untuk memasarkan dan menaikan pasar musik surf Rock di industri musik indonesia</p>
-                  </div>
-                  <!--column-->
-                  <div class="col-xs-12 col-md-6" style="float: right;padding-left: 25%;">
-                     <p style="font-family: ProximaSemiBold;font-size: 20px">SUBSCRIBE TO OUR NEWSLETTER</p>
-                     </br>
-                     <div class="input-group" style="border-radius: 45px;">
-                        <input type="text" class="form-control" style="border-bottom-left-radius: 25px;border-top-left-radius: 25px;" aria-describedby="basic-addon2">
-                        <span style="background-color:#1a8b62 ;border-bottom-right-radius: 25px;border-top-right-radius: 25px;color: white;font-family: ProximaSemiBold" class="input-group-addon" id="basic-addon2">Subscribe</span>
+                  <footer id="section_13" class="parallax parallax_five footer" data-stellar-background-ratio="0.5" style="background-position: 50% 3.5px;">
+                     <div style="padding-left: 50px; padding-right: 50px;background-color: #0f1b24">
+                        <!--=========================
+                           Contact Form
+                           ===========================-->          
+                        </br></br>
+                        <div class="row" style="padding-top: 10px; padding-bottom: 40px; text-align: left;">
+                           <div class="col-xs-12 col-md-6" style="text-align: left">
+                              <img src="assets/img/logobottom.png" width="300px" alt="">
+                              <p style="font-size: 16px;font-family: ProximaReg; line-height: 2rem; margin-top: 5px;"><strong>Deru Ombak Nusantara</strong> adalah media yang mewadahi segala sesuatu bentuk informasi mengenai musik Surf Rock khususnya di Indonesia dan juga bentuk upaya untuk memasarkan dan menaikan pasar musik surf Rock di industri musik indonesia</p>
+                           </div>
+                           <!--column-->
+                           <div class="col-xs-12 col-md-6">
+                              <div class="row">
+                                 <div class="col-md-3"></div>
+                                 <div class="col-md-9">
+                                    <p class="h3" style="font-family: ProximaSemiBold;">SUBSCRIBE TO OUR NEWSLETTER</p>
+                                    <div class="input-group" style="border-radius: 45px;">
+                                       <input type="text" class="form-control" style="border-bottom-left-radius: 25px;border-top-left-radius: 25px;" aria-describedby="basic-addon2">
+                                       <span style="background-color:#067370;border-color: #067370;
+                                    border-bottom-right-radius: 25px;border-top-right-radius: 25px;color: white;font-family: ProximaSemiBold" class="input-group-addon" id="basic-addon2">Subscribe</span>
+                                    </div>
+                                    </br>
+                                    <div class="col-xs-12 col-md-4" style="text-align:left;font-size: 25px;padding: 0px !important">
+                                       <p style="font-family: ProximaSemiBold;">Contact</p>
+                                       <div style="line-height: 2.5rem; font-size: 20px;font-family: ProximaReg">+628579193422</div>
+                                       <div style="line-height: 2.5rem; font-size: 20px;font-family: ProximaReg">@Deruombaknusantara</div>
+                                       <div style="line-height: 2.5rem; font-size: 20px;font-family: ProximaReg">Deruombaknusantara@gmail.com</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--column-->
+                        </div>
+                        <!--row-->
                      </div>
-                     </br>
-                     <div class="col-xs-12 col-md-4" style="text-align:left;font-size: 25px;padding: 0px !important">
-                        <p style="font-family: ProximaSemiBold;">Contact</p>
-                        <div style="font-size: 20px;font-family: ProximaReg">+628579193422</div>
-                        <div style="font-size: 20px;font-family: ProximaReg"">@Deruombaknusantara</div>
-                        <div style="font-size: 20px;font-family: ProximaReg"">Deruombaknusantara@gmail.com</div>
-                     </div>
-                     </br></br></br></br></br></br>
-                  </div>
-                  <!--column-->
-               </div>
-               <!--row-->
-            </div>
-            <!--container--> 
-         </footer>
+                     <!--container--> 
+                  </footer>
             </div>
          </div>
          <!--===================================================================
@@ -614,6 +666,7 @@ diantaranya seperti The Mentawais, The Sailors, The Maguras, dan The Panturas.</
          <script src="assets/js/bigvideo.js"></script>
          <script src="assets/js/main.js"></script>  
          <script>
+
             $('body').jpreLoader({
                 splashID: "#jSplash",
                 loaderVPos: '100%',
@@ -644,8 +697,14 @@ diantaranya seperti The Mentawais, The Sailors, The Maguras, dan The Panturas.</
             
             $(window).bind("load resize slid.bs.carousel", function() {
             var imageHeight = $(".active .holder").height();
-            $(".controllers").height( imageHeight );
-            console.log("Slid");
+              $(".controllers").height( imageHeight );
+               console.log("Slid");
+            });
+
+            $('#scroll_to_content').click(function() {
+               $('html, body').animate({
+                  scrollTop: $('#section-content').offset().top
+               }, 800);
             });
          </script>
       </body>
